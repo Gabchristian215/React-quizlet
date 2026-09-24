@@ -1,0 +1,26 @@
+.flashcard {
+  box-sizing: border-box;
+  width: 600px;
+  height: 300px;
+  margin: 24px auto;
+  padding: 24px;
+  border: 2px solid red;
+  background-color: #fff;
+  color: #333;
+  font: inherit;
+
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flashcard.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-text {
+  display: inline-block;
+}
+
+.flashcard.flipped .card-text {
+  transform: rotateY(180deg);
+}
