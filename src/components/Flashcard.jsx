@@ -3,12 +3,8 @@ import './Flashcard.css'
 
 export default function Flashcard({ question, answer }) {
   const [isFlipped, setIsFlipped] = useState(false)
-
   
-
-  return (
-    
-    
+  return ( 
 <button className={`flashcard ${isFlipped ? "flipped" : ""}`}
     onClick={() => {setIsFlipped((flipped => !flipped))}}
     >
